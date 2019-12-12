@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<% if @included == false  %>
+<p>The word can’t be built out of the original grid</p>
+<% elsif @english_word %>
+<p> The word is valid according to the grid and is an English word</p>
+<% else %>
+<p> The word is valid according to the grid, but is not a valid English word</p>
+<% end %>
